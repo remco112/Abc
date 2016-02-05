@@ -16,5 +16,18 @@ namespace EigenBrowserTest
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnGo_Click(object sender, EventArgs e)
+        // Er zijn nu drie objecten gemaakt, een button, een textbox, en een webbrowser.//
+        // onderstaande code zegt: dat mYbrowser (naam van de object van de browser) wordt aangeroepen.//
+        // en een gebruiker navigeert door het internet, en tbURL. geeft de ingevoerde adres terug in de browser balk//
+        {
+            myBrowser.Navigate(tbURL.Text);
+        }
     }
 }
